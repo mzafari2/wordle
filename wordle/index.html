@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="header">
+        <div id="menu-left"></div>
+        <div id="title-holder">
+          <h2 id="main">wordle</h2>
+        </div>
+        <div id="menu-right">
+          <div id="hint">&#63;</div>
+          <div id="explain">&#9432;</div>
+          <div id="change_mode">&#9681;</div>
+        </div>
+      </div>
+
+      <div class="sub_container">
+        <div id="explanation" class="hidden">
+          <h3>How to play</h3>
+          <p>•Start typing. The letters will appear in boxes</p>
+          <p>•Remove letters with backspace</p>
+          <p>•Hit Enter/Return to submit an answer</p>
+          <p>•Letters with greenback are in the right spot</p>
+          <p>
+            •Letters with yellow background exist in the word, but are in the
+            wrong spots
+          </p>
+          <p>•Letters with gray background do not exist in the word</p>
+          <p>•If you need a hint, click ? icon</p>
+        </div>
+        <img id="my-image" src="" />
+        <div class="puzzle_and_start" id="show">
+          <div class="chart">
+            <table>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="start_over">
+        <button id="start-over-button">Start over</button>
+      </div>
+
+      <div class="footer">
+        <div id="give_hint" class="hidden"><p></p></div>
+        <div id="you_won" style="display: none"><p>you won</p></div>
+        <div id="you_lost" style="display: none"><p>you lost</p></div>
+        <p>©MZ</p>
+      </div>
+    </div>
+    <script src="wordle.js"></script>
+  </body>
+</html>
